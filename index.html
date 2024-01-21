@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;600&display=swap"
+        rel="stylesheet" />
+    <title>Password Generator</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div>
+            <h1>Password Generator</h1>
+
+            <div class="display-container">
+                <input readonly placeholder="PASSWORD" class="password-display"
+                >
+
+                <button>
+                    <span class="password-copy"></span>
+                    <img src="./assets/copy.svg" alt="copy" width="24" height="24" loading="lazy" />
+                </button>
+            </div>
+
+            <div class="input-container">
+                <div class="length-container">
+                    <p>Password Length</p>
+                    <p></p>
+                </div>
+
+                <!-- Slider -->
+                <div>
+                    <input type="range" min="1" max="20" step="1" class="slider">
+                </div>
+
+                <!-- CheckBox -->
+                <div>
+                    <div class="check">
+                        <input type="checkbox" id="uppercase" />
+                        <label for="uppercase">Include Uppercase Letters</label>
+                    </div>
+
+                    <div class="check">
+                        <input type="checkbox" id="lowercase" />
+                        <label for="lowercase">Include Lowercase Letters</label>
+                    </div>
+
+                    <div class="check">
+                        <input type="checkbox" id="numbers" />
+                        <label for="numbers">Include Numbers</label>
+                    </div>
+
+                    <div class="check">
+                        <input type="checkbox" id="symbols" />
+                        <label for="symbols">Include Symbols</label>
+                    </div>
+                </div>
+
+                <div class="strength-container">
+                    <p>Strength</p>
+                    <div class="indicator"></div>
+                </div>
+
+                <button class="generate-btn">Generate Password</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
