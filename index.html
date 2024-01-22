@@ -1,23 +1,28 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;600&display=swap"
         rel="stylesheet" />
-    <title>Password Generator</title>
+    <title>Random Password Generator | Create Strong Passwords </title>
+    <meta
+        content="Generate strong &amp; secure passwords for all your online accounts with our random password generator. Mix letters, numbers and symbols for the ultimate in security."
+        name="Description">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="wrapper">
-        <div>
+        <div class="container">
             <h1>Password Generator</h1>
 
             <div class="display-container">
-                <input readonly placeholder="PASSWORD" class="password-display"
-                data-passwordDisplay>
+                <input readonly placeholder="PASSWORD" class="password-display" data-passwordDisplay>
 
                 <button data-copy>
                     <span class="password-copy" data-copyMsg></span>
@@ -32,7 +37,7 @@
                 </div>
 
                 <!-- Slider -->
-                    <input type="range" min="1" max="20" step="1" class="slider"  data-lengthSlider>
+                <input type="range" min="1" max="20" step="1" class="slider" data-lengthSlider>
 
                 <!-- CheckBox -->
                 <div>
